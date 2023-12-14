@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 
-
+//Si el template no tiene mas de cuatro lineas se puede colocar en el mismo decorador
+//de otra manera se deberia colocar en un archivo distinto.
 @Component({
     selector:'app-counter',
     template: `

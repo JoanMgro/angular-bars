@@ -1,0 +1,17 @@
+<h1>DBZ Personajes</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- Con sintaxis [propiedadHijo] = dato comunico del padre a hijo -->
+        <!-- Con sintaxis (propiedad instancia de eventemitter) = funcion en padre, comunico de hijo a padre -->
+        <dbz-list [characterList]="characters"
+                (onDeleteCharacter)="onDeleteCharacter($event)">
+        </dbz-list>
+
+    </div>
+    <div class="col">
+        <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+
+    </div>
+</div>

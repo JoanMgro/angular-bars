@@ -1,0 +1,14 @@
+<h4>Agregar Personaje</h4>
+    <form action="" class="row" (ngSubmit)="emitCharacter()">
+        <input type="text" name="name" id="" placeholder="Nombre persobaje" class="form-control"
+                [(ngModel)]="character.name">
+                <!-- con la sinstaxix [()], en este caso [(directiva)] y directiva ngModel de establece un two way
+                binding. lo que coloque en el input se guarda en la clase y lo que coloque en la clase se muestra en el html -->
+        <input type="text" name="power" id="" placeholder="Poder" class="form-control"
+                [(ngModel)]="character.power">
+        <button type="submit" class="btn btn-primary">Agregar</button>
+    </form>
+<!-- 
+    <pre>
+        {{character | json}}
+    </pre> -->
